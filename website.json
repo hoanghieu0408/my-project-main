@@ -1,0 +1,20 @@
+[
+  {
+    "id": 4,
+    "name": "Invalid Site",
+    "url": "https://this-site-does-not-exist-12345.com",
+    "active": false
+  },
+  {
+    "id": 7,
+    "name": "reikatachi",
+    "url": "https://reikatachi.vn/",
+    "active": true
+  },
+  {
+    "id": 8,
+    "name": "Room",
+    "url": "https://roommate.id.vn/\t",
+    "active": false
+  }
+]

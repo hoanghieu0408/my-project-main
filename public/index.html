@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📋 Quản lý Website</h1>
+
+  <div class="form">
+    <input id="name" placeholder="Tên website">
+    <input id="url" placeholder="https://example.com">
+    <button onclick="addWebsite()">Thêm Website</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Tên</th>
+        <th>URL</th>
+        <th>Trạng thái</th>
+        <th>Hành động</th>
+      </tr>
+    </thead>
+    <tbody id="websiteTable"></tbody>
+  </table>
+
+  <script src="javascript.js">
+  </script>
+</body>
+</html>
