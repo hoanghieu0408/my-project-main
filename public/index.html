@@ -27,7 +27,24 @@
     <tbody id="websiteTable"></tbody>
   </table>
 
-  <script src="javascript.js">
-  </script>
+  <!-- Edit modal -->
+  <div id="editModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h2 id="modalTitle">Chỉnh sửa Website</h2>
+
+      <label for="modal-name">Tên</label>
+      <input id="modal-name" type="text" placeholder="Tên website">
+
+      <label for="modal-url">URL</label>
+      <input id="modal-url" type="text" placeholder="https://example.com">
+
+      <div class="modal-actions">
+        <button id="modal-save">Lưu</button>
+        <button id="modal-cancel">Hủy</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="javascript.js"></script>
 </body>
 </html>

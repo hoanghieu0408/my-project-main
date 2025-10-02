@@ -1,8 +1,8 @@
 [
   {
     "id": 4,
-    "name": "Invalid Site",
-    "url": "https://this-site-does-not-exist-12345.com",
+    "name": "Invalid Site2",
+    "url": "https://this-site-does-not-exist-12345.com.vn",
     "active": false
   },
   {
@@ -13,8 +13,8 @@
   },
   {
     "id": 8,
-    "name": "Room",
-    "url": "https://roommate.id.vn/\t",
+    "name": "RoomMate",
+    "url": "https://roommate.id.vn/",
     "active": false
   }
 ]

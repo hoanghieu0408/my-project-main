@@ -39,6 +39,18 @@ body {
   .check-btn:hover {
     background: #218838;
   }
+
+  .edit-btn {
+    background: #ffc107;
+    color: #212529;
+    margin-right: 6px;
+    padding: 6px 8px;
+    border-radius: 4px;
+  }
+
+  .edit-btn:hover {
+    background: #e0a800;
+  }
   
   table {
     border-collapse: collapse;
@@ -88,4 +100,73 @@ body {
   .table-input:disabled:hover {
     border-color: #ddd;
   }
-  
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal[aria-hidden="false"] {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  width: 420px;
+  max-width: calc(100% - 40px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #333;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal-actions {
+  margin-top: 12px;
+  text-align: right;
+}
+
+#modal-save {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+#modal-cancel {
+  background: #6c757d;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
