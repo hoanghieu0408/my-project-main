@@ -14,10 +14,11 @@ async function fetchWebsites() {
     const data = await res.json();
     const table = document.getElementById('websiteTable');
     table.innerHTML = '';
-    data.forEach(site => {
+    // hiển thị ID theo thứ tự (index + 1) nhưng row vẫn giữ data-id = site.id
+    data.forEach((site, index) => {
       table.innerHTML += `
         <tr data-id="${site.id}">
-          <td>${site.id}</td>
+          <td>${index + 1}</td>
           <td>${site.name}</td>
           <td><a href="${site.url}" target="_blank" rel="noopener noreferrer">${site.url}</a></td>
           <td id="status-${site.id}" class="${site.active ? 'active' : 'inactive'}">${site.active ? 'Hoạt động' : 'Không hoạt động'}</td>
